@@ -1,0 +1,12 @@
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/bin/Debug/net5.0/ContoCorrenteLib.deps.json
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/bin/Debug/net5.0/ContoCorrenteLib.dll
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/bin/Debug/net5.0/ref/ContoCorrenteLib.dll
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/bin/Debug/net5.0/ContoCorrenteLib.pdb
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/obj/Debug/net5.0/ContoCorrenteLib.csprojAssemblyReference.cache
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/obj/Debug/net5.0/ContoCorrenteLib.GeneratedMSBuildEditorConfig.editorconfig
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/obj/Debug/net5.0/ContoCorrenteLib.AssemblyInfoInputs.cache
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/obj/Debug/net5.0/ContoCorrenteLib.AssemblyInfo.cs
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/obj/Debug/net5.0/ContoCorrenteLib.csproj.CoreCompileInputs.cache
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/obj/Debug/net5.0/ContoCorrenteLib.dll
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/obj/Debug/net5.0/ref/ContoCorrenteLib.dll
+/home/informatropico/Documenti/Workspace/Review/OOPPillars/ContoCorrenteLib/obj/Debug/net5.0/ContoCorrenteLib.pdb
