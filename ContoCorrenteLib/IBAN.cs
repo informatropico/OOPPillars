@@ -1,6 +1,6 @@
 namespace ContoCorrenteLib
 {
-    public class IBAN
+    public sealed class IBAN
     {
         private static long _progressivoContoCorrente =  100000000001;
         private string _siglaInternazionale = "IT";
@@ -22,15 +22,23 @@ namespace ContoCorrenteLib
                 + _numeroContoCorrente;
             } 
             protected set
-            {
-
-            } 
+            {} 
         }
 
         public IBAN()
         {
             this._numeroContoCorrente = _progressivoContoCorrente;
             _progressivoContoCorrente++;
+        }
+
+        public IBAN(string codiceIBAN)
+        {
+            this._siglaInternazionale = codiceIBAN.Substring(0,2);
+            this._numeroDiControllo = codiceIBAN.Substring(2,2);
+            this._CIN = codiceIBAN.Substring(4,1);
+            this._ABI = codiceIBAN.Substring(5,5);
+            this._CAB = codiceIBAN.Substring(10,5);
+            this._numeroContoCorrente = long.Parse(codiceIBAN.Substring(15));
         }
     }
     
