@@ -62,13 +62,12 @@ namespace ContoCorrenteLib
         //
         public override void Deposita(decimal importoDaDepositare, string descrizione)
         {          
-            //  Controlla se il mutuo è estinto (TO-DO l'esitnzione può essere gestita in modo diverso)
-            if(this.Saldo < 0)
+            //  Controlla se il mutuo è estinto
+            if(!this.Estinto())
             {
                 //  Se il Mutuo è associato ad un conto esterno 
                 //  o se nel Conto Risparmio ci sono abbastanza soldi allora posso eseguire il deposito
-                if (this.ContoRisparmioAssociato == null
-                || (this.ContoRisparmioAssociato != null && this.ContoRisparmioAssociato.Saldo > importoDaDepositare))
+                if (this.ContoCorrenteAssociatoEsterno() || this.DepositoCoperto(importoDaDepositare))
                 {
                     this.ContoRisparmioAssociato.Preleva(importoDaDepositare, "Rata mutuo");
                     base.Deposita(importoDaDepositare, "Incasso rata mutuo");                   
@@ -93,6 +92,30 @@ namespace ContoCorrenteLib
         {
             //  Lancerà sempre eccezione.
             base.Preleva(importoDaPrelevare, descrizione);
+        }
+
+        //
+        //  Determina se il Mutuo è estinto.
+        //
+        private bool Estinto()
+        {
+            return this.Saldo >= 0.00M;
+        }
+
+        //
+        //  Verifica se il conto corrente associato al mutuo è di un'altra banca.
+        //
+        private bool ContoCorrenteAssociatoEsterno()
+        {
+            return this.ContoRisparmioAssociato == null;
+        }
+
+        //
+        //  Verifica che nel conto corrente associato della stessa banca ci siano abbastanza soldi per effettuare il deposito.
+        //
+        private bool DepositoCoperto(decimal importoDaDepositare)
+        {
+            return (this.ContoRisparmioAssociato != null && this.ContoRisparmioAssociato.Saldo > importoDaDepositare);
         }
     }
 }
