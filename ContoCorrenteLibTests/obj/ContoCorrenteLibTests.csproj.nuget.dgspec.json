@@ -1,35 +1,85 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLibTests\\ContoCorrenteLibTests.csproj": {}
+    "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLibTests/ContoCorrenteLibTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLibTests\\ContoCorrenteLibTests.csproj": {
+    "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLib/ContoCorrenteLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLibTests\\ContoCorrenteLibTests.csproj",
-        "projectName": "ContoCorrenteLibTests",
-        "projectPath": "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLibTests\\ContoCorrenteLibTests.csproj",
-        "packagesPath": "C:\\Users\\matti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLibTests\\obj\\",
+        "projectUniqueName": "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLib/ContoCorrenteLib.csproj",
+        "projectName": "ContoCorrenteLib",
+        "projectPath": "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLib/ContoCorrenteLib.csproj",
+        "packagesPath": "/home/informatropico/.nuget/packages/",
+        "outputPath": "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLib/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\matti\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/informatropico/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLibTests/ContoCorrenteLibTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLibTests/ContoCorrenteLibTests.csproj",
+        "projectName": "ContoCorrenteLibTests",
+        "projectPath": "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLibTests/ContoCorrenteLibTests.csproj",
+        "packagesPath": "/home/informatropico/.nuget/packages/",
+        "outputPath": "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLibTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/informatropico/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLib\\ContoCorrenteLib.csproj": {
-                "projectPath": "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLib\\ContoCorrenteLib.csproj"
+              "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLib/ContoCorrenteLib.csproj": {
+                "projectPath": "/home/informatropico/Documenti/Workspace/_Review/OOPPillars_Review/ContoCorrenteLib/ContoCorrenteLib.csproj"
               }
             }
           }
@@ -76,61 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLib\\ContoCorrenteLib.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLib\\ContoCorrenteLib.csproj",
-        "projectName": "ContoCorrenteLib",
-        "projectPath": "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLib\\ContoCorrenteLib.csproj",
-        "packagesPath": "C:\\Users\\matti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matti\\Documents\\Workspace\\@informatropico\\_Review\\OOPPillars_Review\\ContoCorrenteLib\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\matti\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
