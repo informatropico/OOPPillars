@@ -59,7 +59,10 @@ namespace ContoCorrenteLib
             this.ElencoOperazioni = new List<Operazione>();
             this.Intestatari = intestatari;
             this._soglia = soglia;
-            this.Deposita(importoIniziale, "Apertura conto.");
+            if(importoIniziale>0.00M)
+            {
+                this.Deposita(importoIniziale, "Apertura conto.");
+            }          
         }
 
         //
@@ -87,12 +90,9 @@ namespace ContoCorrenteLib
         //
         public virtual void Deposita(decimal importoDaDepositare, string descrizione)
         {
-            if(importoDaDepositare > 0.00M)
-            {
-                ElencoOperazioni.Add(new Deposito(
-                    importo: importoDaDepositare,
-                    descrizione: descrizione));
-            }
+            ElencoOperazioni.Add(new Deposito(
+                importo: importoDaDepositare,
+                descrizione: descrizione));
         }
 
         //

@@ -10,12 +10,17 @@ namespace ContoCorrenteLibTests
         private ContoRisparmio contoRisparmioUnderTest;
         private ContoMutuo contoMutuoUnderTest;
         private ICollection<Intestatario> intestatari;
+
+        [TestInitialize]
+        public void Init()
+        {
+            this.intestatari = this.UnIntestatario();
+        }
         
         [TestMethod]
         public void CreaContoRisparmioConImportoIniziale()
         {
-            // Arrange
-            this.intestatari = this.UnIntestatario();
+            // Arrange          
 
             // Act
             this.contoRisparmioUnderTest = this.contoSogliaZeroImportoIniziale();
@@ -43,7 +48,6 @@ namespace ContoCorrenteLibTests
         public void CreaContoMutuoConIBANEsterno()
         {
             // Arrange
-            this.intestatari = this.UnIntestatario();
 
             // Act
             this.contoMutuoUnderTest = this.mutuoIBANEsterno();
@@ -57,7 +61,6 @@ namespace ContoCorrenteLibTests
         public void CreaContoRisparmioConIBANInterno()
         {
             // Arrange
-            this.intestatari = this.UnIntestatario();
             var contoRisparmio = this.contoSogliaNegativaImportoInizialeZero();
 
             // Act
@@ -66,7 +69,7 @@ namespace ContoCorrenteLibTests
             // Assert
             Assert.AreEqual(-100000.00M, this.contoMutuoUnderTest.Saldo);
             Assert.AreEqual(0, this.contoMutuoUnderTest.ElencoOperazioni.Count);
-            Assert.AreEqual("IT02L1234500000100000000001", this.contoMutuoUnderTest.IBANAssociato);
+            Assert.AreEqual(contoRisparmio.IBAN.CodiceIBAN, this.contoMutuoUnderTest.IBANAssociato.CodiceIBAN);
         }
 
         private List<Intestatario> UnIntestatario()
