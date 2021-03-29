@@ -61,26 +61,27 @@ namespace ContoCorrenteLib
         //  Effettua un Deposito in un Mutuo che concorre ad estinguere il debito.
         //
         public override void Deposita(decimal importoDaDepositare, string descrizione)
-        {          
-            //  Controlla se il mutuo è estinto
-            if(!this.Estinto())
-            {
-                //  Se il Mutuo è associato ad un conto esterno 
-                //  o se nel Conto Risparmio ci sono abbastanza soldi allora posso eseguire il deposito
-                if (this.ContoCorrenteAssociatoEsterno() || this.DepositoCoperto(importoDaDepositare))
-                {
-                    this.ContoRisparmioAssociato.Preleva(importoDaDepositare, "Rata mutuo");
-                    base.Deposita(importoDaDepositare, "Incasso rata mutuo");                   
-                }
-                else
-                {
-                    throw new System.Exception("Saldo non sufficiente per pagare la rata");
-                }
-            }
-            else
+        {  
+            //  Eccezione se il mutuo è già estinto.
+            if(this.Estinto())
             {
                 throw new System.Exception ("Mutuo Estinto");
             }
+            
+            //  Eccezione se il conto associato è interno ma il deposito non è coperto.
+            if(!this.ContoCorrenteAssociatoEsterno() && !this.DepositoCoperto(importoDaDepositare))
+            {
+                throw new System.Exception("Saldo non sufficiente per pagare la rata");
+                
+            }
+            
+            //  Se il conto associato è interno effettua il prelievo.
+            if(!this.ContoCorrenteAssociatoEsterno())
+            {
+                this.ContoRisparmioAssociato.Preleva(importoDaDepositare, "Rata mutuo");
+            }
+            
+            base.Deposita(importoDaDepositare, "Incasso rata mutuo");
         }
 
         //
