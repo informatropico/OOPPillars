@@ -6,8 +6,7 @@ Questo progetto l'ho pensato e modellato per ripassare e applicare i 4 pilastri 
 - Ereditarietà (Inheritance)
 - Polimorfismo (Polymorphism)
 
-Il progetto è focalizzato principalmente su questi 4 aspetti e riprende in parte un esempio proposto da Microsoft in una delel sui guide ufficiali.
-Questo significa che molti aspetti non sono stati considerati o approfonditi. Cercherò di citarli nel paragrafo dedicato all'analisi e allo sviluppo della soluzione.
+Il progetto è focalizzato principalmente su questi 4 aspetti e riprende in parte un esempio proposto da Microsoft in una delle sue guide ufficiali. Questo significa che molte questioni non sono state considerate o approfondite. Cercherò di citarle nel paragrafo dedicato all'analisi e allo sviluppo della soluzione.
 
 ## Descrizione del problema
 L'idea è quella di modellare un sistema che simuli la gestioen dei conti corrente di una banca.<br>  
