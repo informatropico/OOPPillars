@@ -138,6 +138,18 @@ namespace ContoCorrenteLibTests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(System.Exception), "Operazione non concessa")]
+        public void ContoMutuoPrelievoEccezione()
+        {
+            // Arrange
+            var contoRisparmio = this.contoSogliaZeroImportoIniziale();
+            this.contoMutuoUnderTest = this.mutuoIBANInterno(contoRisparmio);
+
+            // Act
+            this.contoMutuoUnderTest.Preleva(100.00M, "Rata mutuo");
+        }
+
+        [TestMethod]
         public void ContoMutuoEsternoDeposito()
         {
             // Arrange
