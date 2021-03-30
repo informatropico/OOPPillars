@@ -4,7 +4,7 @@ namespace ContoCorrenteLib
     //  Classe che rappresenta un deposito.
     //  Il deposito è un'operazione caratterizzata da un importo positivo.
     //       
-    public class Deposito : Operazione
+    public sealed class Deposito : Operazione
     {
         //
         //  Creazione di deposito

@@ -7,8 +7,8 @@ namespace ContoCorrenteLibTests
     [TestClass]
     public class ContoCorrenteTest
     {
-        private ContoRisparmio contoRisparmioUnderTest;
-        private ContoMutuo contoMutuoUnderTest;
+        private ContoCorrente contoRisparmioUnderTest;
+        private ContoCorrente contoMutuoUnderTest;
         private ICollection<Intestatario> intestatari;
 
         [TestInitialize]
@@ -64,12 +64,11 @@ namespace ContoCorrenteLibTests
             var contoRisparmio = this.contoSogliaNegativaImportoInizialeZero();
 
             // Act
-            this.contoMutuoUnderTest = this.mutuoIBANInterno(contoRisparmio);
+            this.contoMutuoUnderTest = this.mutuoIBANInterno(contoRisparmio) as ContoMutuo;
 
             // Assert
             Assert.AreEqual(-100000.00M, this.contoMutuoUnderTest.Saldo);
             Assert.AreEqual(0, this.contoMutuoUnderTest.ElencoOperazioni.Count);
-            Assert.AreEqual(contoRisparmio.IBAN.CodiceIBAN, this.contoMutuoUnderTest.IBANAssociato.CodiceIBAN);
         }
 
         [TestMethod]

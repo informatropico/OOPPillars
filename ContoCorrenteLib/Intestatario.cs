@@ -6,33 +6,33 @@ namespace ContoCorrenteLib
     //  Classe che rappresenta un intestatario di un conto corrente
     //
     public class Intestatario
-    {
-        public static int _Id = 1;
+    {       
+        private static int _Id = 1;
         
         //
-        //  Identificativo univoco
+        //  Identificativo univoco.
         //
-        public int Id { get; protected set; }
+        private int Id = 1;
         
         //
-        //  Codice Fiscale dell'intestatario
+        //  Codice Fiscale dell'intestatario.
         //
-        public string CodiceFiscale { get; protected set; }
+        private string CodiceFiscale;
         
         //
-        //  Nome dell'intestatario
+        //  Nome dell'intestatario.
         //
-        public string Nome { get; protected set; }
+        private string Nome;
         
         //
-        //  Cognome dell'intestatario
+        //  Cognome dell'intestatario.
         //
-        public string Cognome { get; protected set; }
+        private string Cognome;
         
         //
-        //  Data di nascita dell'intestatario
+        //  Data di nascita dell'intestatario.
         //
-        public DateTime DataDiNascita { get; protected set; }
+        private DateTime DataDiNascita;
 
         public Intestatario(string CF, string cognome, string nome)
         {
@@ -43,12 +43,12 @@ namespace ContoCorrenteLib
             _Id++;
 
             // TO-DO
-            // Ricavare data di nascita e popolare il campo
-            // Verificare che l'intestatario si maggiorenne o lanciare eccezione
+            // Ricavare data di nascita e popolare il campo.
+            // Verificare che l'intestatario si maggiorenne o lanciare eccezione.
         }
 
         //
-        //  Modifica i dati anagrafici di questo intestatario
+        //  Modifica i dati anagrafici di questo intestatario.
         //
         public void ModificaIntestatario(string CF = null, string cognome = null, string nome = null)
         {
@@ -56,7 +56,7 @@ namespace ContoCorrenteLib
             {
                 this.CodiceFiscale = CF;
                 // TO-DO
-                // Ricalcolare la data dinascita e verificare la maggiore età prima della assegnazione
+                // Ricalcolare la data dinascita e verificare la maggiore età prima della assegnazione.
             }
             if(cognome != null)
             {
@@ -66,6 +66,14 @@ namespace ContoCorrenteLib
             {
                 this.Nome = nome;
             }
+        }
+
+        //
+        //  Restituisce la descrizione dell'intestatario.
+        // 
+        public override string ToString()
+        {
+            return this.CodiceFiscale + " - " + this.Cognome + " " + this.Cognome;
         }
         
     }
