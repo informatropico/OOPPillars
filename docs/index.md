@@ -9,7 +9,7 @@ Questo progetto l'ho pensato e modellato per ripassare e applicare i 4 pilastri 
 Il progetto è focalizzato principalmente su questi 4 aspetti e riprende in parte un esempio proposto da Microsoft in una delle sue guide ufficiali. Questo significa che molte questioni non sono state considerate o approfondite. Cercherò di citarle nel paragrafo dedicato all'analisi e allo sviluppo della soluzione.
 
 ## Descrizione del problema
-L'idea è quella di modellare un sistema che simuli la gestioen dei conti corrente di una banca.<br>  
+L'idea è quella di modellare un sistema che simuli la gestione dei conti corrente di una banca.<br>  
 
 La banca in questione gestisce due tipi di conto corrente:
 - Conto Mutuo
@@ -64,6 +64,6 @@ Rappresenta il codice identificativo del conto corrente. In questo caso sono sta
 
 ### Diagramma delle relazioni
 
-![alt text](img/OOPPillars.jpg "Schema concettuale della soluzione")
+![Schema concettuale della soluzione](img/OOPPillars.jpg "Schema concettuale della soluzione")
 
 ### Descrizione della soluzione
