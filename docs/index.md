@@ -142,7 +142,7 @@ Ci sono esempi in Contocorrente:
 - ContoCorrente(ICollection<Intestatari>, decimal);
 
 ### **Method Overriding**
-Lo ho già citato in precedenza, quind iricito solo il metodo ContoMutuo.Deposita(decimal, string) perchè degno di nota.
+Lo ho già citato in precedenza, quindi ricito solo il metodo ContoMutuo.Deposita(decimal, string) perchè degno di nota.
 
 
 # **Cose che ci sarebbero potute essere ma che non ci sono (elenco disordinato)**
@@ -157,5 +157,5 @@ Alcune di queste potrebbe venire implementate in futuro:
 - Gli importi immessi in input dovrebbero essere forzati ad essere sempre positivi, in quanto è il sistema che gestisce automaticamente i segni in caso di prelievi o depositi (un deposito negativo verrebbe accettato dal sistema e costiuisce di fatto un bug);
 - ... e tante altre cose!
 
-# Conclusione
+# **Conclusione**
 Nella speranza che a qualcuno possa tornare utile :)
