@@ -3,7 +3,7 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
-  host: "https://fonts.google.com/"
+  host: "https://fonts.googleapis.com/"
 
   # Global font settings used on <body> element.
   global: 
