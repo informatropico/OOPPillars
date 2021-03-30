@@ -1,4 +1,7 @@
-# OOPPillarsReview
+---
+title: "OOP Pillars Review"
+date: 2021-03-30
+---
 ## Scopo
 Questo progetto l'ho pensato e modellato per ripassare e applicare i 4 pilastri fondamentali del paradigma di programmazione ad oggetti:
 - Astrazione (Abstraction)
